@@ -30,7 +30,7 @@ Render免费服务器保活心跳监测
 * 站点实时监测：UptimeRobot
 * 自动保持仓库活动，避免定时任务暂停： keepalive-workflow
 
-## action 触发频率比对
+## Action 触发频率比对
 
 频率超限问题
 
