@@ -13,7 +13,7 @@ jobs:
       # 步骤1: 唤醒Render（必须）
       - name: Wake Render
         run: |
-          curl -sI --max-time 20 "https://APP.onrender.com" >/dev/null || true
+          curl -sI --max-time 20 "https://memos-stable-e4bk.onrender.com" >/dev/null || true
           echo "Render pinged at $(date)"
       
       # 步骤2: 每月一次保持GitHub活跃（可选）
