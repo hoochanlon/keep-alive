@@ -4,6 +4,7 @@ Render免费服务器保活心跳监测
 
 * 计划任务调度：cron-job.org
 * 站点实时监测：UptimeRobot
+* 自动保持仓库活动，避免定时任务暂停： keepalive-workflow
 
 
 
