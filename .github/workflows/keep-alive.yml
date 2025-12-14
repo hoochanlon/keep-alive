@@ -1,12 +1,29 @@
-# .github/workflows/keep-alive.yml
+# 修正版本
 name: Keep Render Alive
+
 on:
   schedule:
-    - cron: '*/5 * * * *'  # 每5分钟执行一次
+    # UTC 时间，每5分钟一次
+    - cron: '*/5 * * * *'
+  
+  # 添加手动触发选项（用于测试）
+  workflow_dispatch:
+
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Render App
         run: |
-          curl -s -o /dev/null -w "%{http_code}" https://memos-stable-e4bk.onrender.com
+          # 添加详细输出以便调试
+          echo "开始ping..."
+          status_code=$(curl -s -o /dev/null -w "%{http_code}" https://your-app.onrender.com)
+          echo "HTTP状态码: $status_code"
+          
+          # 如果失败则退出状态码
+          if [ "$status_code" -eq 200 ] || [ "$status_code" -eq 201 ] || [ "$status_code" -eq 204 ]; then
+            echo "✅ Ping成功"
+          else
+            echo "❌ Ping失败"
+            exit 1
+          fi
