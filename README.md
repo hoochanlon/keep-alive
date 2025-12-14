@@ -20,8 +20,6 @@ Render 免费服务器保活心跳监测
 
 ![](https://cdn.jsdelivr.net/gh/hoochanlon/picx-images-hosting@master/uploads/2025/PixPin_2025-12-14_16-26-26.webp)
 
-## 其他
-
 ### Render
 
 预估 https://memos-stable-e4bk.onrender.com 使用频率：每月3次，每次文字1k，图片总数及总和大小3M
@@ -48,25 +46,6 @@ Render 免费服务器保活心跳监测
 
 因此，还是使用 github-twitter + github-blogger 或 cloudflare 部署 memos 高频率发文。
 
-### run.claw.cloud
-
-部署 Paperless，偶尔存点东西，存放不方便存于网盘的文件的，较长期私人共享的文件。
-
-```mermaid
-flowchart TD
-    A[部署 Paperless-ngx] --> B[成本结构分析]
-    
-    B --> C[“固定‘月租’<br>（持续运行的容器）”]
-    B --> D[“浮动消耗<br>（存储、CPU/内存活动）”]
-    
-    C --> E{“关键问题：<br>$5 能否覆盖整月‘月租’？”}
-    
-    E -- 若能覆盖 --> F[“✅ 方案可行<br>可稳定长期运行”]
-    E -- 若无法覆盖 --> G[“⚠️ 方案有风险<br>服务可能月度中断”]
-    
-    F --> H[“优化建议：<br>选择轻量技术栈与镜像”]
-    G --> I[“行动建议：<br>在仪表板密切监控扣费速率”]
-```
 
 
 
