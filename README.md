@@ -47,6 +47,10 @@ Render 免费服务器保活心跳监测
 因此，还是使用 github-twitter + github-blogger 或 cloudflare 部署 memos 高频率发文。
 
 
+### zeabur
+
+免费：1 CPU，2G 内存，。
+
 
 
 
