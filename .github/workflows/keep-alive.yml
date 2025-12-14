@@ -1,9 +1,27 @@
-name: Render Keep Alive - Hourly
+name: Hourly Heartbeat
+
 on:
   schedule:
-    - cron: "0 * * * *"  # 每小时一次
+    - cron: '17 * * * *'  # 每小时的第17分钟（避开整点高峰）
+  workflow_dispatch:
+
 jobs:
-  ping:
+  combined:
     runs-on: ubuntu-latest
+    
     steps:
-      - run: curl -s --max-time 30 "memos-stable-e4bk.onrender.com" > /dev/null
+      # 步骤1: 唤醒Render（必须）
+      - name: Wake Render
+        run: |
+          curl -sI --max-time 20 "https://APP.onrender.com" >/dev/null || true
+          echo "Render pinged at $(date)"
+      
+      # 步骤2: 每月一次保持GitHub活跃（可选）
+      - name: Monthly GitHub Activity
+        run: |
+          # 每月1号执行一次
+          if [ $(date +%d) -eq "01" ]; then
+            echo "Monthly activity check..."
+            # 这里可以添加轻量级操作
+            date > .github/last_active.txt
+          fi
