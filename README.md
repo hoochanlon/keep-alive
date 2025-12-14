@@ -49,7 +49,8 @@ Render 免费服务器保活心跳监测
 
 ### zeabur
 
-免费：1 CPU，2G 内存，每月5美元重置，硬盘 $0.2/GB 月，网络输出费用 $0.1/GB，详情见：https://zeabur.com/docs/zh-CN/billing/pricing 。
+免费：1 CPU，2G 内存，每月5美元重置，硬盘 $0.2/GB 月，网络输出费用 $0.1/GB
+* 详情见：https://zeabur.com/docs/zh-CN/billing/pricing 。
 
 
 
