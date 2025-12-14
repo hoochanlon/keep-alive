@@ -6,4 +6,4 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - run: curl -s --max-time 30 "https://memos-stable-e4bk.onrender.com" > /dev/null
+      - run: curl -s --max-time 30 "memos-stable-e4bk.onrender.com" > /dev/null
