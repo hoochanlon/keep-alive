@@ -1,6 +1,6 @@
 # keep-alive
 
-## Render 免费套餐限制
+## 免费套餐使用频率计算
 
 预估 https://memos-stable-e4bk.onrender.com 使用频率：每月3次，每次文字1k，图片总数及总和大小3M
 * 实际月消耗：8-12 MB，用完时间：66-100个月，约：5.5-8.3年
@@ -24,6 +24,7 @@
 ⚠️ 注意：90天无活动可能被删除
 ```
 
+因此，还是使用 github-twitter + github-blogger 或 cloudflare 部署 memos 高频率发文。
 
 ## 保活心跳监测
 
