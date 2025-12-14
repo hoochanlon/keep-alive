@@ -7,7 +7,7 @@ Render免费服务器保活心跳监测
 
 
 
-action 比对
+action 触发频率比对
 
 ![](https://cdn.jsdelivr.net/gh/hoochanlon/picx-images-hosting@master/uploads/2025/PixPin_2025-12-14_16-27-32.webp)
 
