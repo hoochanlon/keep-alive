@@ -51,6 +51,7 @@ Render 免费服务器保活心跳监测
 
 免费：1 CPU，2G 内存，每月5美元重置，硬盘 $0.2/GB 月，网络输出费用 $0.1/GB
 * 详情见：https://zeabur.com/docs/zh-CN/billing/pricing 。
+* 或用 B2 S3 提供存储数据支撑 [tenten - 比較 Cloudflare R2 與 AWS S3，Blaze B2](https://university.tenten.co/t/cloudflare-r2-aws-s3-blaze-b2/1641)
 
 
 
