@@ -7,3 +7,4 @@ zeabur memos 配置如下：
 存储桶配置
 
 * https://urlbox.com/docs/storage/configure-backblaze-b2#add-backblaze-b2-credentials-to-urlbox
+* [免费搭建高速图床！B2+Cloudflare+PicGo全攻略 ](https://www.cnblogs.com/hopeblaze/articles/18599214)
