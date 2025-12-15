@@ -2,7 +2,15 @@
 
 zeabur memos 配置如下：
 
+基础 官版镜像
+
 ![](https://github.com/hoochanlon/picx-images-hosting/raw/master/uploads/2025/PixPin_2025-12-15_00-15-59.8s3rjb1vs2.webp)
+
+增强：https://github.com/hu3rror/memos-litestream/issues/67
+
+![](https://cdn.jsdelivr.net/gh/hoochanlon/picx-images-hosting@master/uploads/2025/PixPin_2025-12-15_21-55-53.webp)
+
+
 
 存储桶配置（B2 存在兼容性问题，改用R2）
 
