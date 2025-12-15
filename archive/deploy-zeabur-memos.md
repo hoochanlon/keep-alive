@@ -3,3 +3,7 @@
 zeabur memos 配置如下：
 
 ![](https://github.com/hoochanlon/picx-images-hosting/raw/master/uploads/2025/PixPin_2025-12-15_00-15-59.8s3rjb1vs2.webp)
+
+存储桶配置
+
+* https://urlbox.com/docs/storage/configure-backblaze-b2#add-backblaze-b2-credentials-to-urlbox
