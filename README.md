@@ -4,6 +4,9 @@
 
 > [!note]
 > 免费服务器最关键的一点就是限制持久存储与备份作业，想利用shell来操作文件实现备份都不可行。
+> 尝试以下可行方案：
+> * https://github.com/hu3rror/memos-on-fly
+> * https://github.com/hu3rror/memos-litestream
 
 
 ### 保活心跳监测
