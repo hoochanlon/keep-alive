@@ -18,3 +18,10 @@ zeabur memos 配置如下：
 * [免费搭建高速图床！B2+Cloudflare+PicGo全攻略 ](https://www.cnblogs.com/hopeblaze/articles/18599214)
 * [Blog 图床方案：Backblaze B2 (私密桶) + Cloudflare Workers + PicGo](https://blog.standat42.com/posts/image-hosting-backblaze-b2-private-cloudflare-workers-picgo)
 * [通过Cloudflare CDN传递私有的Backblaze B2内容](https://linux.do/t/topic/174255)
+
+
+其他
+
+```
+powershell -Command "Start-Process taskkill -ArgumentList '/F /IM node.exe' -Verb RunAs"
+```
