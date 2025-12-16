@@ -65,6 +65,28 @@ Render 免费服务器保活心跳监测。
 
 采用 [hu3rror/memos-litestream](https://github.com/hu3rror/memos-litestream) 该方案，并结合 B2，既能满足可用存储充足，又能将个人账号基础数据备份，以及使用 [hoochanlon/CF-Proxy-B2](https://github.com/hoochanlon/CF-Proxy-B2) 达到免流目的。
 
+Litestream 备份流程，解决了 serverless 备份限制的痛点
+
+```mermaid
+flowchart TD
+    A[应用程序写入数据] --> B[SQLite 数据库]
+    
+    subgraph SQLite 进程
+        B -- 1. 事务写入 --> C[WAL 文件<br/>顺序记录所有变更]
+        C -- 2. 定期合并 --> D[主数据库文件 .db]
+    end
+    
+    subgraph Litestream 进程
+        E[Litestream<br/>实时监控 WAL] -- 3. 捕获新帧 --> C
+        E -- 4. 流式复制 --> F[上传队列]
+        F -- 5. 异步传输 --> G[远程副本<br/>对象存储 S3/GCS 等]
+    end
+    
+    D -- 6. 生成快照 --> G
+    
+    G -- 7. 基于快照与 WAL 序列 --> H[完成的时间点恢复]
+```
+
 ### run.claw.cloud
 
 更适合搭测试微服务，不太适合折腾学习，更谈不上持久存储了。
