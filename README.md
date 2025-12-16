@@ -65,6 +65,14 @@ Render 免费服务器保活心跳监测。
 
 采用 [hu3rror/memos-litestream](https://github.com/hu3rror/memos-litestream) 该方案，并结合 B2，既能满足可用存储充足，又能将个人账号基础数据备份，以及使用 [hoochanlon/CF-Proxy-B2](https://github.com/hoochanlon/CF-Proxy-B2) 达到免流目的。
 
+### run.claw.cloud
+
+* 免费账号每个月需要登录一次，保号
+* 最多 4 个虚拟 CPU / 8GB 内存
+* 10GB 磁盘空间和流量限制
+* 1 个工作区/可用区
+* 终端只是 Kubernetes 容器，不具备完整的 VPS 功能
+
 
 
 
