@@ -7,7 +7,7 @@
 > 尝试以下可行方案：
 > * https://github.com/hu3rror/memos-on-fly
 > * https://github.com/hu3rror/memos-litestream
-> * [serverless 搭建 memos](https://blog.hoochanlon.moe/posts/20251216121833/)
+> * [serverless 搭建 memos](https://blog.hoochanlon.moe/posts/20251216121833/) + [CF-Proxy-B2](https://github.com/hoochanlon/CF-Proxy-B2)
 
 
 ### 保活心跳监测
